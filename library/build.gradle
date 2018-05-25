@@ -50,7 +50,7 @@ publish {
     userOrg = 'catnulls'
     groupId = 'com.catnull.utils'
     artifactId = 'tools'
-    publishVersion = '0.1'
-    desc = 'utils for date'
-    website = 'https://github.com/CatNulls/CUtils'
+    publishVersion = '0.1.2'
+    desc = 'utils'
+    website = 'https://github.com/CatNulls/utils'
 }
