@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
@@ -28,7 +28,26 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
-    compile 'com.android.support:appcompat-v7:27.+'
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-annotations:27.1.1'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.8.1'
+    }
+}
+
+
+publish {
+    repoName = 'android'
+    userOrg = 'canulls'
+    groupId = 'com.catnull.utils'
+    artifactId = 'library'
+    publishVersion = '0.1'
+    desc = 'utils for date'
+    website = 'https://github.com/CatNulls/CUtils'
 }
