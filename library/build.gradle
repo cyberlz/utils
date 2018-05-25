@@ -21,6 +21,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -44,9 +47,9 @@ buildscript {
 
 publish {
     repoName = 'android'
-    userOrg = 'canulls'
+    userOrg = 'catnulls'
     groupId = 'com.catnull.utils'
-    artifactId = 'library'
+    artifactId = 'tools'
     publishVersion = '0.1'
     desc = 'utils for date'
     website = 'https://github.com/CatNulls/CUtils'

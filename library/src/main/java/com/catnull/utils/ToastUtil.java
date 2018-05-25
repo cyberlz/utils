@@ -3,7 +3,6 @@ package com.catnull.utils;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.view.Gravity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -14,7 +13,7 @@ import android.widget.Toast;
 /**
  *  Name : ToastUtil
  *  description :
- *      吐司工具类
+ *
  *  @author catnull
  *  created at 2018/5/25
  */
